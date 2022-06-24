@@ -40,3 +40,10 @@ Configuration should be injected in the environment.
     Docker Registry: registry
     Docker Machine: virtual machine
 
+##### Docker Images
+
+  Images vs Containers
+    docker containers are built from images.
+  Docker Images:
+    Consists of layers of files.
+    
