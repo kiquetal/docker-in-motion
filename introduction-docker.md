@@ -47,3 +47,10 @@ Configuration should be injected in the environment.
   Docker Images:
     Consists of layers of files.
     
+  Latest is not latest version.
+
+    docker pull ubuntu:latest
+    docker rmi ubuntu:latest
+    docker inspect ubuntu:latest
+    docker image prune
+
