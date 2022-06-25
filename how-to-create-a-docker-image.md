@@ -28,4 +28,28 @@
           && apt-get install -y \
           && apt-get install -y git
     
+    ENV DOC_ROOT /var/www/html
+    ADD code/sites/mysite ${DOC_ROOT}/mysite
+  
+
+#### Difference between ADD and COPY
+    For downloading and unzip use ADD
+    
+
+##### ARG VS ENV
+    
+    Prefer use args for build images
+    
+    ARG with the same name of ENV is not overwritten.
+
+
+    docker build --build-arg DOC_ROOT=/var/www/html -t my-image .
+
+    ARG JQUERY_VERSION=3.2.0
+    ENV JQUERY_VERSION ${JQuERY_VERSION}
+
+
+    IF ARG IS NOT EXISTS will raise an error.
+
+  
   
