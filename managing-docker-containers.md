@@ -34,3 +34,32 @@
 
     docker restart my-container
 
+#### How to run a command against a container
+
+    docker run -it my-container /bin/bash
+
+#### How to get into a container
+
+    docker exec -it my-container /bin/bash
+
+    docker exec -u root -it my-container /bin/bash
+
+#### Using files in a docker container
+
+    docker run -it -v /home/user/my-volume:/var/www/html my-image /bin/bash
+
+#### How to create a volume
+    docker volume create my-volume
+#### How to create a network
+    docker network create my-network
+#### How to link a container to a network
+    docker network connect my-network my-container
+
+#### Different cmd instructions
+
+    CMD [ "EXEC","PARAM1"]
+    CMD command --param1 --param2
+
+#### History of a container
+    docker history my-container
+
