@@ -13,3 +13,8 @@
 #### Connect to network
     
     docker network connect my-network web-server
+
+#### Inspect network
+    
+    docker network inspect my-network
+
